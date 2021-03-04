@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c878804bd1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <section class="form_wrap">
+        <section class="contact_info">
+            <section class="info_tittle">
+                <span class="far fa-user-circle"></span>
+                <h2>INFORMACIÓN<BR>DE CONTACTO</h2>
+            </section>
+            <SECTION class="info_items">
+                <p><span class="fas fa-envelope"></span> info@isspchaco.edu.ar</p>
+                <p><span class="fas fa-phone"></span>+54 9 3624-463089</p>
+            </SECTION>
+         </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Solicitud</h2>
+            <div class="user_info">
+                <label for="names">Nombre y apellido *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular *</label>
+                <input type="text" id="phone" name="telefono" required>
+
+                <label for="email">Correo electrónico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje </label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar formulario" id="btnSend">
+            </div>
+        </form>
+            
+        
+    </section>
+    
+</body>
+</html>
